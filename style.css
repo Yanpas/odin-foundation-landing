@@ -14,8 +14,6 @@ body {
     flex-direction: column;
     align-items: center;
 
-    /* height: 100vh; */
-    /* overflow: hidden; */
     margin: unset;
 
     font-family: 'Roboto', sans-serif;
@@ -46,13 +44,14 @@ header > .links {
     gap: 1em;
     color: var(--white-color);
     font-size: 18px;
+    font-weight: 300;
 }
 
 .section {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 5% 0;
+    padding: 50px 0;
 }
 
 .box {
@@ -68,6 +67,17 @@ header > .links {
 
 .signup-card {
     flex: 1 1 0;
+}
+
+.signup-card > p {
+    color : var(--light-grey-color);
+    font-weight: 300;
+}
+
+.signup-btn {
+    background: var(--button-color);
+    border-radius: 5px;
+    padding: 5px 15px;
 }
 
 .signup-img {
@@ -89,9 +99,53 @@ header > .links {
     gap: 30px;
 }
 
+img {
+    max-width: auto;
+    max-height: 100%;
+    ;
+}
+
+.cards-hdr {
+    margin-bottom: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1;
+}
+
+.card-icon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    justify-content: center;
+    align-content: center;
+    border: 5px solid var(--button-color);
+    border-radius: 25px;
+}
+
+.card-text {
+    font-size: 18;
+    font-weight: 300;
+    text-align: center;
+}
+
 .section.quote {
     background-color: var(--light-grey-color);
     color: var(--blue-color)
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: right;
 }
 
 .section.action {
@@ -111,6 +165,11 @@ button.action {
     border: 2px solid var(--white-color);
     border-radius: 5px;
     padding: 5px 20px;
+}
+
+.action-text > p {
+    color : var(--light-grey-color);
+    font-weight: 300;
 }
 
 .signup-card {
